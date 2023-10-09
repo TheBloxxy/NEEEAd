@@ -1,0 +1,42 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Slap Battles | GameHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab1 = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab2:AddButton({
+	Name = "Auto Collect",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/candyfarm"))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Vantra Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://vantra.cc/api/script/get?placeid=MainLoader"))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "CherryUI Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomScriptr3/gggggggg/main/lolez.txt", true))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "InfinteWare Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blackie-coke/InfiniteWare/main/KS.lua", true))()
+  	end    
+})
