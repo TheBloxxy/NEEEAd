@@ -1,0 +1,65 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Adopt Me | GameHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab1 = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab2:AddButton({
+	Name = "Scam Trade",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Penguin284/AdoptMeTradeScam/main/tradescam"))()
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "Scam Trade",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Penguin284/AdoptMeTradeScam/main/tradescam"))()
+  	end    
+})
+
+
+
+Tab1:AddButton({
+	Name = "Prodigy X Hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua'))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "V.G HUb",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Ice Hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://icehub.cf/IceHubLoader'))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Speed Hub",
+	Callback = function()
+      		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Eazvy Hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/Eazvy-Hub/main/GameLoader.lua"))()
+  	end    
+})
