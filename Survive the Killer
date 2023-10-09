@@ -1,0 +1,144 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Survive the Killer! | GameHub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab1 = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Tab2 = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab2:AddButton({
+	Name = "Auto Collet Objects",
+	Callback = function()
+      		local newBlock = Instance.new("Part")
+newBlock.Size = Vector3.new(5, 0, 5)
+newBlock.BrickColor = BrickColor.new("Bright blue")
+newBlock.Transparency = 1
+newBlock.Anchored = true
+newBlock.Name = "geniusisbrainantiskid"
+newBlock.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0,3.025,0)
+newBlock.Parent = game.Workspace
+game:GetService("RunService").Stepped:Connect(function()
+       pcall(function()
+       game.Players.LocalPlayer.Character.Humanoid.PlatformStand = true
+              game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
+           for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+               if v.ClassName == "Part" or v.ClassName == "MeshPart" then
+                   v.CanCollide = false
+               end
+           end
+       end)
+end)
+print("Loading")
+warn("Loading")
+game:GetService("RunService").Heartbeat:Connect(function()
+newBlock.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame - Vector3.new(0,3.025,0)
+    local spaceLab = workspace:FindFirstChild("Space Lab")
+    local lmfao = workspace:FindFirstChild("Haunted Mansion")
+    local xdal = workspace:FindFirstChild("???")
+local helloNeighbor = workspace:FindFirstChild("Happy Neighborhood")
+    local watefak = workspace:FindFirstChild("Water Treatment Facility")
+    local getreal = workspace:FindFirstChild("Darkwood Asylum")
+ local fr = workspace:FindFirstChild("Night School")
+ local ifuthenno = workspace:FindFirstChild("Deadman's Point")
+ local getmanoe = workspace:FindFirstChild("Skate Zone")
+ local FairGRounds = workspace:FindFirstChild("Fair Grounds")
+ local Classicwillowbruhwhyitissolooongfr = workspace:FindFirstChild("Classic Willow Marsh")
+ local PapaRonisPizzeria = workspace:FindFirstChild("Papa Roni's Pizzeria")
+ local bruhmaps = workspace:FindFirstChild("Willow Marsh")
+ local geniuslol = workspace:FindFirstChild("Scary Gary's Academy")
+ local geniuslolx = workspace:FindFirstChild("Classic Fair Grounds")
+ if xdal then
+ xdal.Name = "Death in your Eyes"
+ elseif geniuslol then
+     geniuslol.Name = "Death in your Eyes" 
+ elseif geniuslolx then
+     geniuslolx.Name = "Death in your Eyes"
+ elseif bruhmaps then
+     bruhmaps.Name = "Death in your Eyes" 
+ elseif PapaRonisPizzeria then
+     PapaRonisPizzeriabruhmaps.Name = "Death in your Eyes" 
+ elseif getmanoe then
+     getmanoe.Name = "Death in your Eyes"
+ elseif FairGRounds then
+     FairGRounds.Name = "Death in your Eyes"
+ elseif Classicwillowbruhwhyitissolooongfr then
+     Classicwillowbruhwhyitissolooongfr.Name = "Death in your Eyes"
+ elseif getreal then
+ getreal.Name = "Death in your Eyes"
+elseif fr then
+fr.Name = "Death in your Eyes"
+elseif ifuthenno then
+ifuthenno.Name = "Death in your Eyes"
+ elseif watefak then
+        watefak.Name = "Death in your Eyes"
+        elseif lmfao then
+        lmfao.Name = "Death in your Eyes"
+    elseif spaceLab then
+        spaceLab.Name = "Death in your Eyes"
+    elseif helloNeighbor then
+        helloNeighbor.Name = "Death in your Eyes"
+    end
+end)
+print("Will be Loaded in 7 seconds")
+warn("Will be Loaded in 7 seconds")
+for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+   v:Disable()
+end
+while wait(7) do 
+pcall(function()
+for i,v in pairs(workspace["Death in your Eyes"].LootSpawns:GetDescendants()) do
+if v:FindFirstChild("LootProxBlock") then
+     if game:GetService("Players").LocalPlayer.PlayerGui.GameHUD.PlayerHUD.XP.RoundInfo.Backpack.Amount.Text == "8/8" then
+         game.Players.LocalPlayer.Character.Humanoid.Health = 0
+         else
+         fireproximityprompt(v.LootProxBlock:FindFirstChild("LootProximityPrompt"), 0, true)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame - Vector3.new(0,4,0)
+fireproximityprompt(v.LootProxBlock:FindFirstChild("LootProximityPrompt"), 1, true)
+wait(0.15)
+fireproximityprompt(v.LootProxBlock:FindFirstChild("LootProximityPrompt"), 1, true)
+wait(0.15)
+fireproximityprompt(v.LootProxBlock:FindFirstChild("LootProximityPrompt"), 1, true)
+---v:Destroy()
+end
+end
+end
+end)
+end
+  	end    
+})
+
+Tab2:AddButton({
+	Name = "Fly-Gui",
+	Callback = function()
+      	loadstring(game:HttpGet("https://pastebin.com/raw/fPtT2Q1F"))()
+  	end    
+})
+
+
+Tab1:AddButton({
+	Name = "ChairWare Hub",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/Milan08Studio/ChairWare/main/main.lua"))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Eltoro Hub",
+	Callback = function()
+      	loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
+  	end    
+})
+
+Tab1:AddButton({
+	Name = "Kiroft Hub ",
+	Callback = function()
+      	loadstring(game:HttpGet('https://raw.githubusercontent.com/Kiroftt/Survive-The-Killer/main/Simple'))();
+  	end    
+})
